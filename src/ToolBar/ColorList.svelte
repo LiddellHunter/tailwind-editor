@@ -1,7 +1,7 @@
 
 <script>
 	import NoColor from '../Icons/NoColor.svelte'
-	import {createEventDispatcher} from 'svelte/internal'
+	import {createEventDispatcher} from 'svelte'
 
 	let dispatch = createEventDispatcher()
 	export let selected_color = ''

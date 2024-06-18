@@ -1,5 +1,5 @@
 <script>				
-	import { createEventDispatcher} from 'svelte/internal'
+	import { createEventDispatcher} from 'svelte'
 
 	import ColorPicker from './ColorPicker.svelte'
 	import CodeIcon from '../Icons/CodeIcon.svelte'
