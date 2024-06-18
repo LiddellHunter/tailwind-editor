@@ -31,12 +31,12 @@
   "version": "0.3.3",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fouita/tailwind-editor.git"
+    "url": "git+https://https://github.com/LiddellHunter/tailwind-editor.git"
   },
   "author": "fouita",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fouita/tailwind-editor/issues"
+    "url": "https://https://github.com/LiddellHunter/tailwind-editor/issues"
   },
-  "homepage": "https://github.com/fouita/tailwind-editor#readme"
+  "homepage": "https://https://github.com/LiddellHunter/tailwind-editor#readme"
 }
