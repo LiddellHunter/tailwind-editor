@@ -285,8 +285,8 @@
       historyChange()
     }
   }
-
-  window.__edw.addEventListener('mousedown', triggerChange)
+    if(window)
+        window.__edw.addEventListener('mousedown', triggerChange)
 </script>
 
 {#if show_toolbar && editable}

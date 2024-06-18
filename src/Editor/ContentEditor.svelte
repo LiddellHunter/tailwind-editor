@@ -1220,7 +1220,8 @@
 	$: ish5 = (gklass??"").includes('text-2xl')
 	$: ish6 = (gklass??"").includes('text-xl')
 
-	window.__edw.addEventListener('mousemove', triggerUpdate)
+    if(window)
+	    window.__edw.addEventListener('mousemove', triggerUpdate)
 
 	$: style=`color:var(--ft-text-color) !important;`+(settings?.txtSize?`font-size:${settings.txtSize}px !important;`:'')
 </script>

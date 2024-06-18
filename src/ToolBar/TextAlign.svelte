@@ -8,7 +8,11 @@
     import { STYLE } from "./const";
     const dispatch = createEventDispatcher()
 
-    $: posKlass = lNode?.getBoundingClientRect()?.bottom > window.__edw.innerHeight ? 'bottom-0 mb-8' : '' 
+const getWindow = () => {
+    if(window) return window;
+}
+
+    $: posKlass = lNode?.getBoundingClientRect()?.bottom > getWindow().__edw.innerHeight ? 'bottom-0 mb-8' : '' 
 
 	let lNode
 

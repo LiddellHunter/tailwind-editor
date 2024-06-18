@@ -6,7 +6,10 @@
 	export {klass as class}
 	export let selected
 	
-	$: posKlass = lNode?.getBoundingClientRect()?.bottom > window.__edw.innerHeight ? 'bottom-0 mb-8' : '' 
+    const getWindow = () => {
+        if(window) return window;
+    }
+	$: posKlass = lNode?.getBoundingClientRect()?.bottom > getWindow().__edw.innerHeight ? 'bottom-0 mb-8' : '' 
 
 	let lNode
 
@@ -47,8 +50,8 @@
 	function hideList(){
 		open = false
 	}
-	
-	window.__edw.addEventListener('click', hideList)
+	if(window)
+	    window.__edw.addEventListener('click', hideList)
 </script>
 
 <div class="relative">
